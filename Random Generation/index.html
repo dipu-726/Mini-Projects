@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radom Generation</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	
+</head>
+<body>
+
+
+	<!-- wrapper -->
+	<div class="container">
+
+		<div class="header">
+			<img class="logo" src="./game-controller.png"/>
+			<p class="heading">Number Guessing Game</p>
+		</div>
+
+		<div id="input-wrapper">
+			
+			<p id="generated-number"></p>
+
+			<input id="accept-input" type="text" name="" />
+
+		</div>
+
+		<!-- buttons for controlled input -->
+		<div class="controller-wrapper">
+			<button id="generate" onclick="getRandomNumber()">
+				Generate
+			</button>
+
+			<button class="u-hide" id="guess" onclick="evaluateInput()">
+				Guess
+			</button>
+
+
+			<button class="u-hide" id="replay" onclick="handleReplayClick()">
+				Replay
+			</button>
+
+		</div>
+		
+		<p id="message"></p>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
